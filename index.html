@@ -2,57 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Canada: Indigenous Population and Community Health</title>
   <style>
-    body { margin: 0; color: #223447; background: #f4f7fa; font-family: Arial, sans-serif; }
-    header { background: #163f59; color: white; padding: 30px 20px; text-align: center; }
-    header h1 { font-size: 29px; margin: 0 0 12px; }
-    header p { margin: 0; color: #dce9f2; }
-    main { max-width: 1190px; margin: 28px auto; padding: 0 18px; }
-    section { background: white; border: 1px solid #dbe3ea; border-radius: 10px;
-              padding: 22px; margin-bottom: 28px; box-shadow: 0 2px 12px rgba(35,65,100,0.06); }
-    h2 { color: #183d56; margin: 0 0 10px; font-size: 23px; }
-    p { line-height: 1.5; }
-    iframe { display: block; width: 100%; border: 1px solid #e1e7ed;
-             border-radius: 5px; background: white; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f7fa; color: #223447; }
+    header { background: #163f59; color: white; padding: 25px; text-align: center; }
+    main { max-width: 1150px; margin: auto; padding: 20px; }
+    section { background: white; padding: 20px; margin-bottom: 24px; }
+    h2 { color: #163f59; }
+    iframe { width: 100%; border: 1px solid #dddddd; }
     .map { height: 730px; }
     .scatter { height: 740px; }
     .donuts { height: 585px; }
-    footer { text-align: center; color: #526579; padding: 0 20px 30px; font-size: 13px; }
-    @media (max-width: 760px) {
-      .map { height: 590px; } .scatter { height: 700px; } .donuts { height: 580px; }
-      section { padding: 12px; }
-    }
+    footer { text-align: center; padding: 20px; }
   </style>
 </head>
 <body>
 <header>
   <h1>Canada: Indigenous Population and Community Health</h1>
-  <p>Interactive visualization of the provided 2021 population and survey data</p>
+  <p>Interactive visualizations of the supplied 2021 data</p>
 </header>
 <main>
   <section>
     <h2>1. Indigenous Population Across Canada</h2>
-    <p>Switch between the four map layers. The first shows population counts;
-       the other three show percentages of each region's total population.
-       Hover over a region for exact counts and percentages.</p>
-    <iframe class="map" src="map.html" title="Interactive map of Indigenous population"></iframe>
+    <p>Select one of the four map layers. Hover over a region to see the counts and percentages.</p>
+    <iframe class="map" src="map.html" title="Indigenous population map"></iframe>
   </section>
   <section>
     <h2>2. Community Belonging and Mental-Health Needs Met</h2>
-    <p>Use the animation controls to compare sexes. Color and symbol indicate group.
-       Only observations with both percentages available are plotted.</p>
-    <iframe class="scatter" src="scatter.html" title="Animated community and mental health scatterplot"></iframe>
+    <p>Use the play button to compare sexes. Color and symbol identify each population group.</p>
+    <iframe class="scatter" src="scatter.html" title="Animated scatterplot"></iframe>
   </section>
   <section>
-    <h2>3. Indigenous Group Composition in the Three Largest Regions</h2>
-    <p>Each donut shows the distribution of First Nations, Inuit, and Métis
-       within the Indigenous population of the indicated province.</p>
-    <iframe class="donuts" src="donuts.html" title="Three interactive Indigenous population donuts"></iframe>
+    <h2>3. Indigenous Population Composition</h2>
+    <p>Each donut shows how the Indigenous population is divided among three groups.</p>
+    <iframe class="donuts" src="donuts.html" title="Indigenous population donut charts"></iframe>
   </section>
 </main>
-<footer>Source: Instructor-provided 2021 Canada population and health-inequality data.
-Missing percentages were not treated as zero.</footer>
+<footer>Source: Instructor-provided Canadian population and health data. Missing values are not zero.</footer>
 </body>
 </html>
